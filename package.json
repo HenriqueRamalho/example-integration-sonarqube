@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "node ./src/index.js",
-    "test": "jest"    
+    "test": "jest",
+    "coverage:web": "http-server ./coverage/lcov-report"    
   },
   "keywords": [],
   "author": "",
