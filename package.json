@@ -1,7 +1,7 @@
 {
   "name": "example-integration-sonarqube",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple activity for Full Cycle Course",
   "main": "src/index.js",
   "scripts": {
     "dev": "node ./src/index.js",
