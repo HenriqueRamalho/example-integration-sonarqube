@@ -8,7 +8,7 @@
     "test": "jest",
     "coverage:web": "http-server ./coverage/lcov-report"
   },
-  "keywords": [],
+  "keywords": ["sonar"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
