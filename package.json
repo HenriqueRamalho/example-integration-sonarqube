@@ -1,16 +1,27 @@
 {
   "name": "example-integration-sonarqube",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "Activity for Full Cycle Course",
+  "main": "src/index.js",
   "scripts": {
     "dev": "node ./src/index.js",
-    "test": "jest"    
+    "test": "jest",
+    "coverage:web": "http-server ./coverage/lcov-report"
   },
-  "keywords": [],
+  "keywords": ["sonar"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "jest-sonar-reporter": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "testResultsProcessor": "jest-sonar-reporter",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/"
+    ]
   }
 }
